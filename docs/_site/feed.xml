@@ -3,10 +3,10 @@
   <channel>
     <title>Rome Feature Bridge</title>
     <description>Rome Feature Bridge is an abstraction between Machine Learninging Models and Features so to replace redudent code that for feeding models with features, allowing switching model flavors or Feature Storage platforms with only configuration changes.</description>
-    <link>http://localhost:4000/rome/</link>
-    <atom:link href="http://localhost:4000/rome/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Jan 2023 18:49:21 -0600</pubDate>
-    <lastBuildDate>Sun, 15 Jan 2023 18:49:21 -0600</lastBuildDate>
+    <link>https://methodical-company.github.io//rome/</link>
+    <atom:link href="https://methodical-company.github.io//rome/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Jan 2023 18:56:44 -0600</pubDate>
+    <lastBuildDate>Sun, 15 Jan 2023 18:56:44 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;It is a long time.&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Jun 2019 13:52:21 -0500</pubDate>
-        <link>http://localhost:4000/rome/2019/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/rome/2019/hello-world/</guid>
+        <link>https://methodical-company.github.io//rome/2019/hello-world/</link>
+        <guid isPermaLink="true">https://methodical-company.github.io//rome/2019/hello-world/</guid>
         
         
         <category>jekyll</category>
@@ -44,8 +44,8 @@
 
 </description>
         <pubDate>Fri, 28 Jun 2019 05:52:21 -0500</pubDate>
-        <link>http://localhost:4000/rome/2019/welcome/</link>
-        <guid isPermaLink="true">http://localhost:4000/rome/2019/welcome/</guid>
+        <link>https://methodical-company.github.io//rome/2019/welcome/</link>
+        <guid isPermaLink="true">https://methodical-company.github.io//rome/2019/welcome/</guid>
         
         
         <category>jekyll</category>

@@ -3,4 +3,4 @@ title: Discussion Forum
 permalink: /forum/
 ---
 
-{% include embed/discourse.html %}
+{% include discourse.html %}
