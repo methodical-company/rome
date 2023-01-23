@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# Welcome to Rome Bridge
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Rome Bridge is an adapter between Feature Stores and Data Science Models.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+It makes it so that there is a common interface to models and also eliminates the trouble (and risk) in feeding features into a data science model. Too frequently you will find yourself spending too much time rewriting the interface code. With this standard intefrace you can swithch out Feature Stores or Models without a lot of code changes.
