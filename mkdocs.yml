@@ -1,0 +1,17 @@
+site_name: Rome Bridge
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+plugins:
+  - search
+  - mkdocstrings
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+nav:
+    - Home: index.md
+    - Code Reference:
+        - Rome Explorer: explorer-reference.md
