@@ -9,10 +9,15 @@ plugins:
   - search
   - mkdocstrings
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
     - Home: index.md
+    - Simple Example: simple-example.md
+    - Roll Your Own: roll_own.md
     - Code Reference:
         - Rome Explorer: explorer-reference.md
     - Contribute: Contribute.md
