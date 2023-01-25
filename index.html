@@ -46,7 +46,19 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#supported-feature-stores">Supported Feature Stores</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#supported-data-science-models">Supported Data Science Models</a>
+    </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="simple-example/">Simple Example</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="roll_own/">Roll Your Own</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Code Reference</span></p>
@@ -82,13 +94,176 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="welcome-to-rome-bridge">Welcome to Rome Bridge</h1>
-<p>Rome Bridge is an adapter between Feature Stores and Data Science Models.</p>
-<p>It makes it so that there is a common interface to models and also eliminates the trouble (and risk) in feeding features into a data science model. Too frequently you will find yourself spending too much time rewriting the interface code. With this standard intefrace you can swithch out Feature Stores or Models without a lot of code changes.</p>
+<p>Rome Bridge is an adapter between Feature Stores and Data Science Models. A common interface for feading features to machine learning models helps expidite developement, allow interchangability and reduces the risk involved with accidently feending features into models the wrong way. </p>
+<h2 id="supported-feature-stores">Supported Feature Stores</h2>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Open Source</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS Sagemaker Feature Store</td>
+<td>No</td>
+<td><a href="https://aws.amazon.com/sagemaker/feature-store/">link</a></td>
+</tr>
+<tr>
+<td>Tecton</td>
+<td>No</td>
+<td><a href="http://tecton.ai">link</a></td>
+</tr>
+<tr>
+<td>Databrick Feature Store</td>
+<td>No</td>
+<td><a href="https://docs.databricks.com/applications/machine-learning/feature-store/index.html">link</a></td>
+</tr>
+<tr>
+<td>Feature Form</td>
+<td>No</td>
+<td><a href="https://www.featureform.com/">link</a></td>
+</tr>
+<tr>
+<td>Feast</td>
+<td>Yes</td>
+<td><a href="https://feast.dev/">link</a></td>
+</tr>
+<tr>
+<td>Vertex AI</td>
+<td>No</td>
+<td><a href="https://cloud.google.com/vertex-ai/docs/featurestore">link</a></td>
+</tr>
+<tr>
+<td>Hopswork</td>
+<td>Yes</td>
+<td><a href="https://www.hopsworks.ai/feature-store">link</a></td>
+</tr>
+<tr>
+<td>feathr</td>
+<td>Yes</td>
+<td><a href="https://engineering.linkedin.com/blog/2022/open-sourcing-feathr---linkedin-s-feature-store-for-productive-m">link</a></td>
+</tr>
+<tr>
+<td>Rasgo</td>
+<td>No</td>
+<td><a href="https://www.rasgoml.com/">link</a></td>
+</tr>
+<tr>
+<td>Butterfree</td>
+<td>Yes</td>
+<td><a href="https://github.com/quintoandar/butterfree">link</a></td>
+</tr>
+<tr>
+<td>Bytehub</td>
+<td>Yes</td>
+<td><a href="https://docs.bytehub.ai/">link</a></td>
+</tr>
+<tr>
+<td>Kaskada</td>
+<td>No</td>
+<td><a href="https://kaskada.com/">link</a></td>
+</tr>
+<tr>
+<td>ScribbleData</td>
+<td>No</td>
+<td><a href="https://www.scribbledata.io/product">link</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-data-science-models">Supported Data Science Models</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>flavor</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rulefit Regressor</td>
+<td>sklearn.ensemble.GradientBoostingRegressor</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>ExtraTrees Regressor</td>
+<td>sklearn.ensemble.ExtraTreesRegressor</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>sklearn.ensemble.RandomForestRegressor</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>Average Blender</td>
+<td>sklearn.linear_model.LogisticRegression</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">Link</a></td>
+</tr>
+<tr>
+<td>eXtreme Gradient Boosted Trees Regressor</td>
+<td>sklearn.ensemble.GradientBoostingRegressor or xgboost</td>
+<td><a href="https://github.com/tqchen/xgboost">Link</a> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>Light Gradient Boosted Trees Regressor</td>
+<td>lightgbm.ESLGBMTR</td>
+<td><a href="https://github.com/Microsoft/LightGBM">Link</a></td>
+</tr>
+<tr>
+<td>Decision Tree Regressor</td>
+<td>sklearn.tree.DecisionTreeRegressor</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>Support Vector Machines</td>
+<td>libsvm</td>
+<td><a href="https://github.com/cjlin1/libsvm">Link</a></td>
+</tr>
+<tr>
+<td>Elastic Net Regressor or Ridge Regressor</td>
+<td>lightning's CDRegressor</td>
+<td><a href="https://contrib.scikit-learn.org/lightning/">Link</a></td>
+</tr>
+<tr>
+<td>Auto tune kNN Regressor</td>
+<td>sklearn.neighbors.KNeighborsRegressor</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html">Link</a></td>
+</tr>
+<tr>
+<td>Breiman and Cutler Random Forest Regressor</td>
+<td>R</td>
+<td><a href="http://math.furman.edu/~dcs/courses/math47/R/library/randomForest/html/00Index.html">Link</a></td>
+</tr>
+<tr>
+<td>online gradient descent variant</td>
+<td>vowpal wabbit Regressor</td>
+<td><a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki">Link</a></td>
+</tr>
+<tr>
+<td>Neural Network Regressor</td>
+<td>TensorFlow</td>
+<td><a href="https://github.com/tensorflow/tensorflow">Link</a></td>
+</tr>
+<tr>
+<td>Generalized Additive Model</td>
+<td>LinearGAM</td>
+<td><a href="https://pygam.readthedocs.io/en/latest/">Link</a></td>
+</tr>
+<tr>
+<td>Linear Regression</td>
+<td>sklearn.linear_model.LinearRegression</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">Link</a></td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="explorer-reference/" class="btn btn-neutral float-right" title="Rome Explorer">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="simple-example/" class="btn btn-neutral float-right" title="Simple Example">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -112,7 +287,7 @@
     
     
     
-      <span><a href="explorer-reference/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="simple-example/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -131,5 +306,5 @@
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-01-23 06:22:39.519959+00:00
+Build Date UTC : 2023-01-25 05:49:33.139090+00:00
 -->
