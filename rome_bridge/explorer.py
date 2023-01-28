@@ -11,9 +11,9 @@ RomeFeast
 
 """
 
-from feature_stores.rome_feast import RomeFeast
-from feature_stores import RomeBaseFeatureStore
-from typing import Optional
+from rome_bridge.feature_stores.rome_feast import RomeFeast
+from rome_bridge.feature_stores import RomeBaseFeatureStore
+from rome_bridge.models import RomeBaseModel
 
 class RomeExplorer:
     """
@@ -34,11 +34,14 @@ class RomeExplorer:
 
 
     """
-    def __init__(self, additional_feature_stores: list[RomeBaseFeatureStore]=[] ) -> None:
+    def __init__(self, additional_feature_stores: list[RomeBaseFeatureStore]=[],
+                    additional_models: list[RomeBaseModel]=[]) -> None:
         """__init__ for RomeExplorer
 
         Args:
             additional_feature_stores (list[RomeBaseFeatureStore], optional): additonal loaded feature stores. Defaults to [].
+            additional_models(list[RomeBaseModel], optional): additonal loaded models. Defaults to [].
+
         """
         self.modules = [RomeFeast, ] 
         self.modules += additional_feature_stores

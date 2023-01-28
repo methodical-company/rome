@@ -1,4 +1,4 @@
-from feature_stores import RomeBaseFeatureStore
+from . import RomeBaseFeatureStore
 
 
 class RomeFeast(RomeBaseFeatureStore):
